@@ -2,7 +2,7 @@ clc
 clear all;
 close all;
 
-% Ustawienie wartoœci do obliczeñ
+% Ustawienie wartoÅ›ci do obliczeÅ„
 
 T=820;
 T_k=T+273;
@@ -27,7 +27,7 @@ C(1,4)=0.47;
 C(1,5)=0.47;
 austenit=zeros(1,100);
 
-%Wykonywanie obliczeñ
+%Wykonywanie obliczeÅ„
 
 for i=1:100
 	D=d0*exp(-Q/(R*(T_k+(dT*i))))*1E10;
@@ -51,11 +51,11 @@ for i=1:100
 	tab(i,:)=C(1,:);
 	C(1,:)=C(2,:);
 end
-% Wyœwietlanie wykresów
+% WyÅ›wietlanie wykresÃ³w
 
 figure(1);
-title('Wykres zmiany objêtoœci austenitu w stali w funkcji czasu');
-ylabel('U³amek objêtoœci');
+title('Wykres zmiany objÄ™toÅ›ci austenitu w stali w funkcji czasu');
+ylabel('UÅ‚amek objÄ™toÅ›ci');
 xlabel('Krok');
 axis([1 100 0 30]);
 hold on;
@@ -63,9 +63,9 @@ plot(austenit,'red-');
 hold off;
 
 figure(2);
-title('Rozk³ad stê¿enia z odleg³oœci¹ w poszczególnych krokach');
+title('RozkÅ‚ad stÄ™Å¼enia z odlegÅ‚oÅ›ciÄ… w poszczegÃ³lnych krokach');
 xlabel('element');
-ylabel('stê¿enie[%]');
+ylabel('stÄ™Å¼enie[%]');
 hold on;
 plot(tab(1,1:15));
 plot(tab(5,1:15));
