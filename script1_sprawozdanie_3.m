@@ -1,4 +1,3 @@
-%% 
 close all; clear all; clc;
 
 temp = 820;
@@ -17,7 +16,7 @@ v=0;
 
 for i=1:100
     if(i==1)
-        C(i) = 0.3829; %wype³nienie 
+        C(i) = 0.3829; %wypeÂ³nienie 
     else
         C(i) = cga; 
     end
@@ -48,10 +47,10 @@ end
 if mod(j, 100) == 0
     Calka_Aust(int)=trapz(C1);
 if int >= 5
-    deltaCalka = Calka_Aust(int)-Calka_Aust(int-1); %krok z jakim wartoœci siê zmieniaj¹
+    deltaCalka = Calka_Aust(int)-Calka_Aust(int-1); %krok z jakim wartoÅ“ci siÃª zmieniajÂ¹
     dksi = deltaCalka/(0.1-0.02);
-if dksi >= dx %dx to sta³y krok
-    ksi_2=round(dksi/dx) %zaokr¹glenie ró¿nicy przez sta³y krok
+if dksi >= dx %dx to staÂ³y krok
+    ksi_2=round(dksi/dx) %zaokrÂ¹glenie rÃ³Â¿nicy przez staÂ³y krok
 if(ksi_2 >= max_ksi)
     break;
 end
